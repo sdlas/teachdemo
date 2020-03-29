@@ -1,0 +1,31 @@
+<view class="title">一些基本属性</view>
+<view class="backgroundtest">
+  <view class="child1">高度：700rpx</view>
+  <view>(子级标签会继承父级标签的class属性，但若子级的class与父级冲突，子级class优先)</view>
+  <view>宽度：100%</view>  
+  <view>背景颜色：greenyellow</view>
+  <view>字体大小：40rpx</view>
+  <view>字体粗细：400（默认粗细）</view>
+  <view>字体颜色：黑色</view>
+  <view>文字默认靠左开始显示</view>
+  <view class="child2">居中显示</view>
+  <view class="child3">靠右显示</view>
+</view>
+<view class="title">图片背景</view>
+<view class="title" style="height:150rpx;font-size:30rpx;line-height:50rpx;">因为wxss暂不支持加载本地图片文件，所以顺便说一下样式语言的一种新的写法，即写wxml文件标签的style中，其权值高于class和id。</view>
+<view class="title" style="height:100rpx;font-size:30rpx;line-height:50rpx;">为了说明以图片为背景的一些知识点，我们引用网络图片来讲述。</view>
+<view class="littletitle">image控件直接引用</view>
+<image src="https://www.laiad231.cn/image/food.jpg"></image>
+<view class="note">image控件引用图片会按照图片长和宽的比例自行适配</view>
+<view class="littletitle">以300X300的容器大小直接显示图片</view>
+<view style="background-image:url(https://www.laiad231.cn/image/food.jpg);height:300rpx;width:300rpx;"></view>
+<view class="note">使用background-image:url(图片地址)的方式来使用图片，图片只会显示原大小的一部分</view>
+<view class="littletitle">在300X300的容器中显示完整的图片</view>
+<view style="background-image:url(https://www.laiad231.cn/image/food.jpg);background-size:cover;background-cover:true;height:300rpx;width:300rpx;"></view>
+<view class="note">在添加了background-size:cover属性后，图片会根据容器大小适配</view>
+<view class="title">今天先到这里，未完待续......</view>
+<view class="notice-box">
+  <view class="notice">
+    <view>本周任务</view>
+  </view>
+</view>
