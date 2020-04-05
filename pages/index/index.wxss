@@ -1,3 +1,31 @@
+/* 选择器 */
+.test{
+  color:brown;
+}
+p.test{
+  color:red;
+}
+#study{
+  color:green;
+}
+/* 基本属性 */
+.backgroundtest{
+  height:700rpx;
+  width:100%;
+  background-color:rgb(235, 235, 235);
+  font-size:40rpx;
+  color:black;
+}
+.child1{
+  font-size:30rpx;
+}
+.child2{
+  text-align:center;
+}
+.child3{
+  text-align: right;
+}
+/* 标题与内容的样式 */
 .title{
   box-sizing:border-box;
   height: 100rpx;
@@ -27,6 +55,7 @@
   padding-left:50rpx;
   font-weight:300;
 }
+/* 小黑板 */
 .notice-box{
   display: flex;
   flex-direction: row;
@@ -38,31 +67,12 @@
   padding:30rpx;
   width:90%;
   background:rgb(23, 90, 81);
-  border:20rpx solid rgb(66, 66, 66);
+  border:20rpx solid rgb(102, 10, 10);
   color:white;
   font-size:35rpx;
   border-radius:10rpx;
 }
-.backgroundtest{
-  height:700rpx;
-  width:100%;
-  background-color:rgb(235, 235, 235);
-  font-size:40rpx;
-  color:black;
-}
-.child1{
-  font-size:30rpx;
-}
-.child2{
-  text-align:center;
-}
-.child3{
-  text-align: right;
-}
+/* 模块之间的间隙 */
 .blank{
-  height:100rpx;
-  text-align:center;
-  line-height: 100rpx;
-  font-size:40rpx;
-  color:#4A4E63;
+  height:150rpx;
 }

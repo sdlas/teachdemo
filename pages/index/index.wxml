@@ -1,4 +1,17 @@
-<view class="title">一些基本属性</view>
+<view class="title">一、CSS语法</view>
+<image src="https://www.laiad231.cn/image/rule.png" style="height:140rpx;width:100%;"></image>
+<view class="blank"></view>
+
+<view class="title">二、选择器</view>
+<view class="note">选择器有很多，这里只简单介绍比较常用的class和id</view>
+<view class="test">学习微信小程序(class直接选择)</view>
+<p class="test">学习微信小程序（指定特定元素使用class）</p>
+<view id="study">学习微信小程序(指定id)</view>
+<p class="test" id="study">学习微信小程序（id优先于class）</p>
+<view class="blank"></view>
+
+<view class="title">三、一些基本属性</view>
+<view class="note">这里的基本属性需要熟记，这些都是非常常用的属性</view>
 <view class="backgroundtest">
   <view class="child1">高度：700rpx</view>
   <view>(子级标签会继承父级标签的class属性，但若子级的class与父级冲突，子级class优先)</view>
@@ -7,25 +20,35 @@
   <view>字体大小：40rpx</view>
   <view>字体粗细：400（默认粗细）</view>
   <view>字体颜色：黑色</view>
-  <view>文字默认靠左开始显示</view>
-  <view class="child2">居中显示</view>
-  <view class="child3">靠右显示</view>
+  <view>文字默认靠左开始显示left</view>
+  <view class="child2">居中显示center</view>
+  <view class="child3">靠右显示right</view>
 </view>
-<view class="title">图片背景</view>
-<view class="title" style="height:150rpx;font-size:30rpx;line-height:50rpx;">因为wxss暂不支持加载本地图片文件，所以顺便说一下样式语言的一种新的写法，即写wxml文件标签的style中，其权值高于class和id。</view>
+<view class="blank"></view>
+
+<view class="title">四、图片背景</view>
+<view class="note">因为wxss暂不支持加载本地图片文件，所以顺便说一下样式语言的一种新的写法，即写wxml文件标签的style中，语法和css相同，其权值高于class和id。style很常用，尤其是涉及到数据绑定和逻辑处理时不得不使用style。</view>
 <view class="title" style="height:100rpx;font-size:30rpx;line-height:50rpx;">为了说明以图片为背景的一些知识点，我们引用网络图片来讲述。</view>
-<view class="littletitle">image控件直接引用</view>
+<view class="littletitle">1.image控件直接引用</view>
 <image src="https://www.laiad231.cn/image/food.jpg"></image>
 <view class="note">image控件引用图片会按照图片长和宽的比例自行适配</view>
-<view class="littletitle">以300X300的容器大小直接显示图片</view>
+<view class="littletitle">2.以300X300的容器大小直接显示图片</view>
 <view style="background-image:url(https://www.laiad231.cn/image/food.jpg);height:300rpx;width:300rpx;"></view>
 <view class="note">使用background-image:url(图片地址)的方式来使用图片，图片只会显示原大小的一部分</view>
-<view class="littletitle">在300X300的容器中显示完整的图片</view>
+<view class="littletitle">3.在300X300的容器中显示完整的图片</view>
 <view style="background-image:url(https://www.laiad231.cn/image/food.jpg);background-size:cover;background-cover:true;height:300rpx;width:300rpx;"></view>
 <view class="note">在添加了background-size:cover属性后，图片会根据容器大小适配</view>
+<view class="blank"></view>
 <view class="title">今天先到这里，未完待续......</view>
 <view class="notice-box">
   <view class="notice">
-    <view>本周任务</view>
+    <view>本周任务：</view>
+    <view>复习所学内容，最好能自己新建一个项目练练手。可从github下载这个项目的源码，地址https://github.com/sdlas/teachdemo，下载后用微信开发者工具导入，有问题随时找我</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
   </view>
 </view>
+<view class="title">下期预告</view>
+<view class="note">下节课还是接着讲css，我打算讲盒子模型，可能会讲display布局，或者一些杂七杂八的东西。有时间的同学可以提前预习，css这一块的知识点非常多，要讲完是不可能的，我只能粗略地讲一些比较实用的东西，而且要学好css光靠我讲的这一点点东西是远远不够的，所以大家一定要自己多去学习！</view>
+<view style="height:300rpx;"></view>
