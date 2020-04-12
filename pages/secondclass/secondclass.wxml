@@ -1,0 +1,91 @@
+<view class="title">一、盒子模型</view>
+<view class="littletitle">1.概览</view>
+<view class="note">· 一般内外距都是默认为0，但也有例外情况，可以通过加上* {margin: 0;padding: 0;}来强制使全部内外边距为0，其中*是全部的意思。</view>
+<view class="note">· 背景应用于内边距和元素部分</view>
+<view class="note">· height和width指定的是element(元素）的大小。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。</view>
+<image src="https://www.laiad231.cn/image/boxmodel.png" style="height:650rpx;"></image>
+<view class="boxmodel">盒子模型</view>
+<view class="note">↑一个栗子</view>
+<view class="littleblank"></view>
+<view class="littletitle">2.内边距padding</view>
+<view class="note">·padding 属性接受长度值或百分比值，但不允许使用负值</view>
+<view class="note">·可以按照上、右、下、左的顺序分别设置各边的内边距（从上开始顺时针顺序），示例代码如下</view>
+<view class="note">padding:1rpx 0rpx 2rpx 3rpx;</view>
+<view class="note">分别代表上1rpx,右0rpx,下2rpx，左3rpx</view>
+<view class="note">也可通过padding-top;padding-right;padding-bottom;padding-left来直接指定</view>
+<view class="note">·百分数值是相对于其父元素的 width 计算的</view>
+<view class="father">
+  <view class="child"></view>
+</view>
+<view class="compare"></view>
+<view class="note">↑一个栗子</view>
+<view class="littleblank"></view>
+<view class="littletitle">3.边框border</view>
+<view class="note">·border-style，边框样式，一般用solid，即实线边框，还有很多其他类型边框，如点线(dotted)、虚线(dashed)、双线(double)</view>
+<view class="borderstyle"></view>
+<view class="note">↑一个栗子</view>
+<view class="note">·通过border-width指定边框宽度，通过border-color指定边框颜色</view>
+<view class="note" style="color:red">·一定要记得在给定了边框宽度和颜色之前设置了边框样式，否则是不会显示出边框的</view>
+<view class="littletitle">4.外边距margin</view>
+<view class="note">margin的使用方法和padding基本没有区别，这里主要说一下外边距合并</view>
+<view class="note">·当一个元素出现在另一个元素上面时，第一个元素的下外边距与第二个元素的上外边距会发生合并,以边距较大的为准。</view>
+<view class="margintestup"></view>
+<view class="margintestdown"></view>
+<view class="note">↑一个栗子</view>
+<view class="note">·当一个元素包含在另一个元素中时，它们的上和/或下外边距也会发生合并。</view>
+<view class="margintestfather">
+  <view class="margintestchild"></view>
+</view>
+<view class="note">↑一个栗子</view>
+<view class="blank"></view>
+
+
+<view class="title">二、CSS定位</view>
+<view class="littletitle">1.定位机制</view>
+<view class="note" style="color:red">CSS 有三种基本的定位机制：普通流（默认）、浮动和绝对定位。</view>
+<view class="note">普通流元素从上到下一个接一个地排列，元素之间的垂直距离是由框的垂直外边距计算出来。</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">2.相对定位</view>
+<view class="note">如果对一个元素进行相对定位，它将出现在它所在的位置上。然后，可以通过设置垂直或水平位置，让这个元素“相对于”它的起点进行移动。</view>
+<view class="relative"></view>
+<view class="compare"></view>
+<view class="note">↑一个栗子</view>
+<view class="note">在使用相对定位时，无论是否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它元素。其原来的空间仍在普通流中</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">3.绝对定位</view>
+<view class="note">绝对定位使元素的位置与普通流无关，因此不占据空间。</view>
+<view class="note">绝对定位的元素的位置相对于最近的已定位祖先元素</view>
+<view class="absolute"></view>
+<view class="compare"></view>
+<view class="blank"></view>
+<view class="note">↑一个栗子</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">4.浮动</view>
+<view class="note">浮动的元素可以向左或向右移动，直到它的外边缘碰到包含元素（父级元素）或另一个浮动框的边框为止。由于浮动框不在普通流中，所以浮动元素在普通流中就像不存在一样。</view>
+<view class="note" style="color:red">一定要记得给浮动元素的容器（父级元素）设置足够的大小，不然浮动元素会溢出来。</view>
+<view class="floatbox">
+  <view class="floatchild1"></view>
+  <view class="floatchild2"></view>
+  <view class="floatchild3"></view>
+</view>
+<view class="note">↑一个栗子</view>
+<view class="blank"></view>
+<view class="title">今天先到这里，未完待续......</view>
+<view class="notice-box">
+  <view class="notice">
+    <view>本周任务：</view>
+    <view>复习所学内容，项目源码还在那个地址，下载后覆盖就可以了。</view>
+    <view>不出意外，之后的内容都会写在这个小程序里，最后的最后我会以这个小程序为示例，教你们如何申请一个小程序账号并将其上线。</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
+  </view>
+</view>
+<view class="blank"></view>
+<view class="title">下期预告</view>
+<view class="note">flex布局(上节课手误，不是display布局)还是留着下节课讲吧，下节课应该就是最后一次讲CSS了，之后我就开始讲js了。</view>
+<view class="blank"></view>
+

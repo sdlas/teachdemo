@@ -1,0 +1,27 @@
+/* 选择器 */
+.test{
+  color:brown;
+}
+p.test{
+  color:red;
+}
+#study{
+  color:green;
+}
+/* 基本属性 */
+.backgroundtest{
+  height:700rpx;
+  width:100%;
+  background-color:rgb(235, 235, 235);
+  font-size:40rpx;
+  color:black;
+}
+.child1{
+  font-size:30rpx;
+}
+.child2{
+  text-align:center;
+}
+.child3{
+  text-align: right;
+}

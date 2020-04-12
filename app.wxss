@@ -1,10 +1,54 @@
-/**app.wxss**/
-.container {
-  height: 100%;
+/* 标题与内容的样式 */
+.title{
+  box-sizing:border-box;
+  height: 100rpx;
+  width:100%;
+  background-color:#FAFAFA;
+  font-size: 50rpx;
+  line-height:100rpx;
+  padding-left:50rpx;
+  font-weight:300;
+}
+.littletitle{
+  box-sizing:border-box;
+  height: 60rpx;
+  width:100%;
+  background-color:#FAFAFA;
+  font-size: 35rpx;
+  line-height:60rpx;
+  padding-left:50rpx;
+  font-weight:300;
+}
+.note{
+  box-sizing:border-box;
+  width:100%;
+  background-color:#FAFAFA;
+  font-size: 30rpx;
+  line-height:50rpx;
+  padding-left:50rpx;
+  font-weight:300;
+}
+/* 小黑板 */
+.notice-box{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+}
+.notice{
   box-sizing: border-box;
-} 
+  padding:30rpx;
+  width:90%;
+  background:rgb(23, 90, 81);
+  border:20rpx solid rgb(102, 10, 10);
+  color:white;
+  font-size:35rpx;
+  border-radius:10rpx;
+}
+/* 模块之间的间隙 */
+.blank{
+  height:150rpx;
+}
+.littleblank{
+  height:70rpx;
+}
