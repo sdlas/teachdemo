@@ -5,6 +5,6 @@
   </view>
   <view class="label" bindtap="jump" data-id="2">
     <view class="labeltitle">第二次课</view>
-    <view class="labelnote">主要内容：盒子模型(框模型)，flex布局</view>
+    <view class="labelnote">主要内容：盒子模型(框模型)，CSS定位</view>
   </view>
 </view>

@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/secondclass/secondclass",
     "pages/index/index",
     "pages/firstclass/firstclass",
+    "pages/secondclass/secondclass",
     "pages/logs/logs"
   ],
   "window": {
