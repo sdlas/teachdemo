@@ -26,7 +26,7 @@
   </view>
   <view class="label" bindtap="jump" data-id="5">
     <view class="labeltitle">第一次课</view>
-    <view class="labelnote">主要内容：了解JS</view>
+    <view class="labelnote">主要内容：了解JS文件</view>
   </view>
   <view class="blank"></view>
 </view>

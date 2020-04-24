@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/jsfirstclass/jsfirstclass",
     "pages/index/index",
+    "pages/jsfirstclass/jsfirstclass",
     "pages/firstclass/firstclass",
     "pages/secondclass/secondclass",
     "pages/additionalcss/additionalcss",
