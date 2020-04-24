@@ -1,0 +1,168 @@
+<view class="title">一、什么是flex布局</view>
+<view class="note">Flex是Flexible Box的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。任何一个容器都可以指定为Flex布局。通过display:flex来声明一个容器的布局为flex </view>
+<view class="note">优点：不管屏幕分辨率如何变化，页面受到影响不大，适合移动端。</view>
+<view class="note">ps:还有很种布局方式，这里只介绍flex这一种，建议多去学习几种。</view>
+<view class="blank"></view>
+<view class="title">二、一些基本概念</view>
+<view class="note">容器，就是父元素</view>
+<view class="note">项目，就是子元素</view>
+<view class="note">主轴（main axis），就是水平方向假想的一个轴</view>
+<view class="note">交叉轴（cross axis），就是垂直方向假想的一个轴</view>
+<view class="blank"></view>
+<view class="title">三、flex容器的属性</view>
+<view class="littletitle">1.flex-direction</view>
+
+
+<view class="test_father" style="flex-direction:{{flex_direction}};">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+</view>
+<view class="note">↑一个栗子({{flex_direction}})</view>
+<view class="note">flex-direction决定主轴的方向（即项目的排列方向）。它有4个可能的值 ：</view>
+<view class="note" bindtap="changedirection" data-id="0"> row（默认值）：主轴为水平方向，起点在容器的左端。  </view>
+<view class="note" bindtap="changedirection" data-id="1">row-reverse：主轴为水平方向，起点在容器的右端。 </view>
+<view class="note" bindtap="changedirection" data-id="2">column：主轴为垂直方向，起点在容器的上沿。 </view>
+<view class="note" bindtap="changedirection" data-id="3">column-reverse：主轴为垂直方向，起点在容器的下沿。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">2.flex-wrap</view>
+<view class="note">默认情况下容器里所有项目都排在一条线上，flex-wrap定义如果一行排不下 如何换行。 </view>
+<view class="test_father" style="flex-direction:row;flex-wrap:{{flex_wrap}};width:70%;height:400rpx;">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+  <view class="test_child">3</view>
+</view>
+<view class="note">↑一个栗子({{flex_wrap}})</view>
+<view class="note">它可能的值有三个： </view>
+<view class="note" bindtap="changewrap" data-id="0">nowrap（默认）：不换行。 </view>
+<view class="note" bindtap="changewrap" data-id="1">wrap：换行，第一行在上方。 </view>
+<view class="note" bindtap="changewrap" data-id="2">wrap-reverse：换行，第一行在下方。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">3.flex-flow</view>
+<view class="note">flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">4.justify-content</view>
+<view class="note">justify-content 定义了项目在主轴(默认水平)上的对齐方式。</view>
+<view class="note" style="color:red">注意：主轴一开始说的是水平方向上假想的一个轴是因为默认flex-direction是row（横向排列），如果设置了flex-direction是column(纵向排列）切记此时的主轴改变为竖直方向了</view>
+<view class="test_father" style="flex-direction:row;justify-content:{{justify_content}};height:200rpx;">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+  <view class="test_child">3</view>
+</view>
+<view class="note">↑一个栗子({{justify_content}})</view>
+<view class="note">它可能的值有5个： </view>
+<view class="note" bindtap="changejustify" data-id="0">flex-start:向主轴的起始位置对齐</view>
+<view class="note" bindtap="changejustify" data-id="1">flex-end：向主轴结束位置对齐</view>
+<view class="note" bindtap="changejustify" data-id="2">center： 居中</view>
+<view class="note" bindtap="changejustify" data-id="3">space-between:项目均匀排列，项目之间的间隔相等。注：如果只有一个项目则只在容器主轴的开始位置排列</view>
+<view class="note" bindtap="changejustify" data-id="4">space-around：每个项目两侧的间隔相等。如果只有一个项目则排列在中间。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">5.align-items</view>
+<view class="note">align-items属性定义项目在交叉轴（与主轴垂直的轴）上如何对齐。它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下。 </view>
+<view class="test_father" style="flex-direction:row;justify-content:flex-start;height:300rpx;align-items:{{align_items}}">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+  <view class="test_child">3</view>
+</view>
+<view class="note">↑一个栗子({{align_items}})</view>
+<view class="note">本例flex-direction:row,故交叉轴为竖直方向</view>
+<view class="note" bindtap="changealign" data-id="0">flex-start：交叉轴的起点对齐。 </view>
+<view class="note" bindtap="changealign" data-id="1">flex-end：交叉轴的终点对齐。 </view>
+<view class="note" bindtap="changealign" data-id="2">center：交叉轴的中点对齐。 </view>
+<view class="note" bindtap="changealign" data-id="3">baseline: 项目的第一行文字的基线对齐。 </view>
+<view class="note" bindtap="changealign" data-id="4">stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">6.align-content</view>
+<view class="note">align-content属性定义了多根轴线（多行）的对齐方式。如果项目只有一根轴线（一行），该属性不起作用。</view>
+<view class="note">理解方式：将每一行看作一个子元素，类比justify-content</view>
+<view class="test_father" style="flex-direction:row;height:600rpx;flex-wrap:wrap;align-content:{{align_content}}">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+  <view class="test_child">3</view>
+  <view class="test_child">4</view>
+  <view class="test_child">5</view>
+  <view class="test_child">6</view>
+  <view class="test_child">7</view>
+  <view class="test_child">8</view>
+</view>
+<view class="note">↑一个栗子({{align_content}})</view>
+<view class="note" bindtap="changealigncontent" data-id="0">stretch（默认值）：多行占满整个交叉轴。 </view>
+<view class="note" bindtap="changealigncontent" data-id="1">flex-start：与交叉轴的起点对齐。 </view>
+<view class="note" bindtap="changealigncontent" data-id="2">flex-end：与交叉轴的终点对齐。 </view>
+<view class="note" bindtap="changealigncontent" data-id="3">center：与交叉轴的中点对齐。  </view>
+<view class="note" bindtap="changealigncontent" data-id="4">space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。  </view>
+<view class="note" bindtap="changealigncontent" data-id="5">space-around：每根轴线两侧的间隔都相等。 </view>
+<view class="blank"></view>
+
+<view class="title">四、项目（子元素）的属性</view>
+<view class="littletitle">1.order</view>
+<view class="note">order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</view>
+<view class="test_father" style="flex-direction:row;height:200rpx;">
+  <view class="test_child" style="order:3">0</view>
+  <view class="test_child" style="order:1">1</view>
+  <view class="test_child" style="order:2">2</view>
+  <view class="test_child" style="order:0">3</view>
+</view>
+<view class="note">↑一个栗子</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">2.flex-grow</view>
+<view class="note">flex-grow属性定义项目的放大比例，默认为0。 </view>
+<view class="note">这里有一大段规则，因为这个我用的不多，所以我就不多说了，愿意研究的同学自己看吧</view>
+<view class="note" wx:if="{{hidden0}}" bindtap="showhidden" data-id="0">点击展开↓</view>
+<view class="note" wx:else bindtap="showhidden" data-id="0">点击收起↑</view>
+<view class="note" wx:if="{{!hidden0}}">如果所有的item 的flex-grow的值都是一样的话那就是以item 的width为最小值平均分配主轴上的宽度。如果item没有设置width则所有的item平分主轴上的剩余宽度（多余空间）。 
+如果item的flex-grow的值不一样，那就是根据对应的比例来分配主轴上的剩余宽度（多余空间）。同样是以item设置的width为最小值。 
+如果item设置的max-width则放大的宽度不会超过该值。</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">3.flex-shrink</view>
+<view class="note">flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。 </view>
+<view class="note">这里也是有一大段规则，愿意研究的同学自己看吧</view>
+<view class="note" wx:if="{{hidden1}}" bindtap="showhidden" data-id="1">点击展开↓</view>
+<view class="note" wx:else bindtap="showhidden" data-id="1">点击收起↑</view>
+<view class="note" wx:if="{{!hidden1}}">如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。 
+如果container容器设置的flex-wrap则不存在空间不足的情况，如果超过会自动换行。所以这时候设置flex-shrink也是不起作用的。 
+负值对该属性无效。</view>
+<view class="littleblank"></view>
+
+<view class="littletitle">4.flex-basis</view>
+<view class="note">flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">5.flex</view>
+<view class="note">flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。 </view>
+<view class="littleblank"></view>
+
+<view class="littletitle">6.align-self</view>
+<view class="note">align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。</view>
+<view class="test_father" style="flex-direction:row;align-items:flex-start;height:200rpx;">
+  <view class="test_child">0</view>
+  <view class="test_child">1</view>
+  <view class="test_child">2</view>
+  <view class="test_child" style="align-self:flex-end">3</view>
+</view>
+<view class="blank"></view>
+<view class="notice-box">
+  <view class="notice">
+    <view>本周任务：</view>
+    <view>复习所学内容，项目源码还在那个地址，下载后覆盖就可以了。</view>
+    <view>这节课就是我们最后一次讲css了，如果有认真练习的话，现在应该就可以自己动手写一些简单的页面了，之后我们就开始讲js，期间可能还会穿插一些小的css知识点。</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
+    <view>多动手练习!!!</view>
+  </view>
+</view>
+<view class="blank"></view>
+
+
+

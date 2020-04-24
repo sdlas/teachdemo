@@ -1,11 +1,33 @@
 .container{
-  height:100vh;
   width:100vw;
   background:#FAFAFA;
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
   align-items: center;
+}
+.titleicon{
+  height:20rpx;
+  width:20rpx;
+  background:greenyellow;
+  transform:rotate(45deg);
+}
+.titlebox{
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  box-sizing: border-box;
+  padding-left:50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bigtitle{
+  margin-left:20rpx;
+  font-size:40rpx;
+  color:#4A4E63;
+  font-weight: 300;
 }
 .label{
   margin-top:30rpx;

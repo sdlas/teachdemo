@@ -1,0 +1,16 @@
+/* pages/thirdclass/thirdclass.wxss */
+.test_father{
+  display: flex;
+  height:600rpx;
+  background:greenyellow;
+}
+.test_child{
+  height:150rpx;
+  width:150rpx;
+  border:5rpx solid white;
+  background: pink;
+  font-size:40rpx;
+  text-align: center;
+  line-height: 150rpx;
+  color:purple;
+}

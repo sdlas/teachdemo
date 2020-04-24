@@ -18,6 +18,21 @@ Page({
       wx.navigateTo({
         url: '../secondclass/secondclass',
       })
+      break;
+      case 3:
+      wx.navigateTo({
+        url: '../thirdclass/thirdclass',
+      })
+      break;
+      case 4:
+      wx.navigateTo({
+        url: '../additionalcss/additionalcss',
+      })
+      break;
+      case 5:
+      wx.navigateTo({
+        url: '../jsfirstclass/jsfirstclass',
+      })
     }
   },
   onLoad: function () {

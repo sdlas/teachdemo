@@ -35,7 +35,7 @@
   height:200rpx;
   width:200rpx;
   background-color:red;
-  margin-bottom:100rpx;
+  margin-bottom:200rpx;
 }
 .margintestdown{
   margin-top:200rpx;

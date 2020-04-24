@@ -1,4 +1,8 @@
 <view class="container">
+  <view class="titlebox">
+    <image class="titleicon"></image>
+    <view class='bigtitle'>CSS部分</view>
+  </view>
   <view class="label" bindtap="jump" data-id="1">
     <view class="labeltitle">第一次课</view>
     <view class="labelnote">主要内容：选择器，常用属性，图片背景</view>
@@ -7,4 +11,22 @@
     <view class="labeltitle">第二次课</view>
     <view class="labelnote">主要内容：盒子模型(框模型)，CSS定位</view>
   </view>
+  <view class="label" bindtap="jump" data-id="3">
+    <view class="labeltitle">第三次课</view>
+    <view class="labelnote">主要内容：flex布局</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="4">
+    <view class="labeltitle">补充内容</view>
+    <view class="labelnote">一些零碎的知识点</view>
+  </view>
+
+  <view class="titlebox" style="margin-top:30rpx">
+    <image class="titleicon"></image>
+    <view class='bigtitle'>JS部分</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="5">
+    <view class="labeltitle">第一次课</view>
+    <view class="labelnote">主要内容：了解JS</view>
+  </view>
+  <view class="blank"></view>
 </view>

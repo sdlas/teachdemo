@@ -1,0 +1,49 @@
+<view class="title">一、计划</view>
+<view class="note">考虑到开学临近，而且大家这学期要分专业，所以到后期大家的时间会很紧张，所以我计划再用两节课就把微信小程序这块给结束了，剩下来就靠你们自己了。</view>
+<view class="note">所以js这块我就不系统教学了，直接就讲一些比较实用的东西</view>
+<view class='littleblank'></view>
+<view class="title">二、看微信小程序JS文件结构</view>
+<view class="brainbox">
+  <view class="brainroot">Page({})</view>
+  <view class="brainitembox">
+    <view class="brainitem">data{}</view>
+    <view class="brainbox">
+      <view class="brainroot">函数</view>
+      <view class="brainitembox">
+        <view class="brainbox">
+          <view class="brainroot">系统给定函数</view>
+          <view class="brainitembox">
+            <view class="brainitem">生命周期函数</view>
+            <view class="brainitem">其他保留函数</view>
+          </view>
+        </view>
+        <view class="brainitem">自定义函数</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='littleblank'></view>
+<view class="title">三、逐个讲解</view>
+<view class="littletitle">1.data</view>
+<view class="note">data用于声明要用到的数据，无需声明数据类型</view>
+
+<view class="littletitle">2.函数</view>
+<view class="note">函数都差不多，没什么好说的，Js函数的特点是无须声明函数类型，无需设置输入参数类型</view>
+
+<view class="littletitle">3.生命周期函数</view>
+<view class="note">类比安卓,这里讲解几个比较常用的</view>
+<view class="note">onLaunch()，app打开时开始执行函数</view>
+<view class="note">onLoad()，页面打开时执行函数</view>
+<view class="note">onShow()，页面出现时执行函数</view>
+<view class="note">onHide()，页面隐藏时执行函数</view>
+<view class="note">onUnload()，页面卸载时执行函数</view>
+
+<view class="littletitle">4.其他保留函数</view>
+<view class="note">onPullDownRefresh()，监听用户下拉动作</view>
+<view class="note">onReachBottom()，页面上拉触底事件的处理函数</view>
+<view class="note">onShareAppMessage()，用户点击右上角分享</view>
+<view class="blank"></view>
+<view class="title">今天先到这里，未完待续......</view>
+<view class="title">下期预告</view>
+<view class="note">下节课直接就开始做一些实例了，比较简单，但一定要勤加练习。</view>
+<view style="height:300rpx;"></view>

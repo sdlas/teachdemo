@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/jsfirstclass/jsfirstclass",
     "pages/index/index",
     "pages/firstclass/firstclass",
     "pages/secondclass/secondclass",
+    "pages/additionalcss/additionalcss",
     "pages/logs/logs"
   ],
   "window": {
