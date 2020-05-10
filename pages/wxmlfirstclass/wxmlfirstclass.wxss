@@ -1,0 +1,78 @@
+/* pages/wxmlfirstclass/wxmlfirstclass.wxss */
+.itemcontainer{
+  height:200rpx;
+  width:1400rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.items{
+  height:200rpx;
+  width:200rpx
+}
+
+
+.container{
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items:center;
+}
+.planbox{
+  margin-top:10px;
+  height:100px;
+  width:90%;
+  border:1px solid  rgb(226, 226, 226);
+  box-shadow:rgb(226, 226, 226) 0rpx 0rpx 30rpx 0rpx;
+  border-radius:2px;
+}
+.time{
+  height:20px;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+  color:rgb(109, 109, 109);
+}
+.type{
+  height:20px;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+  color:rgb(109, 109, 109);
+}
+.numbox{
+  height:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width:100%;
+  color:rgb(109, 109, 109);
+}
+.name{
+  height:20px;
+  width:50%;
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+  color:rgb(109, 109, 109);
+}
+.num{
+  height:20px;
+  width:50%;
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+  color:rgb(109, 109, 109);
+}
+.method{
+  height:20px;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+  color:rgb(109, 109, 109);
+}

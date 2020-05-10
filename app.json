@@ -2,10 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/jsfirstclass/jsfirstclass",
+    "pages/jssecondclass/jssecondclass",
+    "pages/jsthirdclass/jsthirdclass",
     "pages/firstclass/firstclass",
     "pages/secondclass/secondclass",
     "pages/additionalcss/additionalcss",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/wxmlfirstclass/wxmlfirstclass",
+    "pages/wxmlsecondclass/wxmlsecondclass",
+    "pages/newpage/newpage"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +18,5 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

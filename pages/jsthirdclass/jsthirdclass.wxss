@@ -1,0 +1,9 @@
+/* pages/jsthirdclass/jsthirdclass.wxss *//* pages/jsthridclass/jsthirdclass.wxss */
+.bindtest{
+  height:100rpx;
+  width:100%;
+  background:greenyellow;
+  font-size:40rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

@@ -1,4 +1,4 @@
-// pages/jsfirstclass/jsfirstclass.js
+// pages/jsthridclass/jsthirdclass.js
 Page({
 
   /**
@@ -7,12 +7,18 @@ Page({
   data: {
 
   },
-  hello:function(e,a){},
+  //点击传参函数
+  tap: function (e) {
+    var that = this
+    console.log(e)
+    //取参数的格式是e.currentTarget.dataset.xx
+    console.log("js拿到了参数，参数是：", e.currentTarget.dataset.id)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("the page start")
+
   },
 
   /**
@@ -33,7 +39,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
@@ -47,7 +53,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-      console.log("你下拉了")
+
   },
 
   /**

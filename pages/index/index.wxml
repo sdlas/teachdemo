@@ -28,5 +28,25 @@
     <view class="labeltitle">第一次课</view>
     <view class="labelnote">主要内容：了解JS文件</view>
   </view>
+  <view class="label" bindtap="jump" data-id="6">
+    <view class="labeltitle">第二次课</view>
+    <view class="labelnote">主要内容：JS与WXML的数据交互</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="7">
+    <view class="labeltitle">补充内容</view>
+    <view class="labelnote">一些零碎的知识点</view>
+  </view>
+  <view class="titlebox" style="margin-top:30rpx">
+    <image class="titleicon"></image>
+    <view class='bigtitle'>WXML部分</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="8">
+    <view class="labeltitle">第一次课</view>
+    <view class="labelnote">主要内容：scorll-view,列表渲染</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="9">
+    <view class="labeltitle">补充内容</view>
+    <view class="labelnote">一些零碎的知识点</view>
+  </view>
   <view class="blank"></view>
 </view>

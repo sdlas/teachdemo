@@ -15,7 +15,7 @@
   background-color:#FAFAFA;
   font-size: 35rpx;
   line-height:60rpx;
-  padding-left:50rpx;
+  padding-left:60rpx;
   padding-right:50rpx;
   font-weight:300;
 }
@@ -24,7 +24,7 @@
   background-color:#FAFAFA;
   font-size: 30rpx;
   line-height:50rpx;
-  padding-left:50rpx;
+  padding-left:70rpx;
   padding-right:50rpx;
   font-weight:300;
 }

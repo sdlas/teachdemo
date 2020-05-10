@@ -33,6 +33,27 @@ Page({
       wx.navigateTo({
         url: '../jsfirstclass/jsfirstclass',
       })
+      break;
+      case 6:
+      wx.navigateTo({
+        url:'../jssecondclass/jssecondclass',
+      })
+      break;
+      case 7:
+      wx.navigateTo({
+        url: '../jsthirdclass/jsthirdclass',
+      })
+      break;
+      case 8:
+      wx.navigateTo({
+        url:'../wxmlfirstclass/wxmlfirstclass'
+      })
+      break;
+      case 9:
+      wx.navigateTo({
+        url: '../wxmlsecondclass/wxmlsecondclass',
+      })
+      break;
     }
   },
   onLoad: function () {

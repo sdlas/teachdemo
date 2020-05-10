@@ -1,0 +1,19 @@
+<view class="title">一、bindtap传参</view>
+<view class="littletitle">1.什么是bindtap</view>
+<view class="note">bindtap就是点击监听事件，任何标签都可以绑定的一个事件，因为只要是显示出来的东西，都可以点击</view>
+<view class="littletitle">2.如何传参</view>
+<view class="note">在标签中加入data-xx="value"来实现传参</view>
+<view class="bindtest" bindtap="tap" data-id="123">点我传参数</view>
+
+<view class="title">二、缓存</view>
+<view class="littletitle">1.什么是缓存？</view>
+<view class="note">缓存就是暂时存在本地的文件，就算退出小程序也不会清除缓存中的数据。</view>
+<view class="littletitle">2.缓存的作用</view>
+<view class="note">缓存是所有页面共用的，所以在页面间传参起着重要的作用，缓存还有许多其他的作用，总之十分强大</view>
+<view class="littletitle">3.缓存的用法</view>
+<view class="note">每一个缓存文件对应一个key值，通过这个key值来实现对文件的修改和读取</view>
+<view class="note">wx.setStorageSync(key,data)设置缓存</view>
+<view class="note">wx.getStorageSync(key)获取指定key值的缓存</view>
+<view class="title"></view>
+<view class="littletitle"></view>
+<view class="note"></view>

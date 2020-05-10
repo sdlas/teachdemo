@@ -1,0 +1,47 @@
+<view class="title">一、列表渲染</view>
+<view class="littletitle">1.单层渲染</view>
+<view class="note" wx:for="{{fruitarr}}" wx:key>{{index}}{{item}}</view>
+<view class="note">上面这个例子把fruitarr这个数组用列表渲染展开了</view>
+<view class="note">wx:key可加可不加，不加会出现警告，不过也没什么大问题</view>
+<view class="note">item代表列表渲染中的每一项</view>
+<view class="note">index是列表渲染中非常重要的东西，他是列表渲染中每一项的编号，从0开始</view>
+<view class="littleblank"></view>
+<view class="littletitle">2.多层列表（套娃）</view>
+<view class="note">这里之直接搬了一个项目的源码，多层列表就是列表里面有一个列表</view>
+<view class="note">外层列表是服药计划列表，其中每一个服药计划中又有一个服用药物的列表</view>
+<view class="note">因为外层列表已经占用了item，为了不产生冲突，用wx:for-item来为低层列表指定一个变量代替item</view>
+<view class="note">同理，也可以通过wx:for-index="xx"来用xx代替index行使功能</view>
+<view class="container">
+  <view class="planbox" style="height:{{60+numlist.length*20}}px" wx:for="{{planlistarr}}" wx:key>
+    <view class="time">服药时间{{item.time}}</view>
+    <view class="type">{{item.type}}</view>
+    <view class="numbox" wx:for="{{item.numlist}}" wx:key wx:for-item="cell">
+      <view class="name">{{cell.name}}</view>
+      <view class="num">{{cell.num}}</view>
+    </view>
+    <view class="method">{{item.method}}</view>
+  </view>
+</view>
+<view class="blank"></view>
+
+
+<view class="title">二、scroll-view</view>
+<view class="note">scroll-view就是一个可滚动的视图容器</view>
+<view class="note" style="color:red">注意，不是scroll-view可滚动，而是scroll-view里面的内容可滚动</view>
+<view class="note">可以把scroll-view看作是一个手机屏幕，它的大小虽然固定，但是却可以通过滚动看到更多的内容</view>
+<view class="note">所以，要实现scroll-view的滚动功能</view>
+<view class="note">scroll-view中的内容要比scroll-view大！</view>
+<view class="note">scroll-view中的内容要比scroll-view大！</view>
+<view class="note">scroll-view中的内容要比scroll-view大！</view>
+<view class="note" style="color:red">注意，scroll-view只能朝着一个方向滚动，并且要设定scroll-x或scroll-y为true</view>
+<view class="note" style="color:red">注意，要给scroll-view设定大小，没有大小的手机是什么都看不见的</view>
+<view class="note">下面是一个横向滚动的例子</view>
+<scroll-view style="width:90vw;height:200rpx;" scroll-x="true">
+  <view class="itemcontainer">
+    <view class="items" wx:for="{{7}}" style="background-color:{{colorarr[index]}}"></view>
+  </view>
+</scroll-view>
+<view class="note">建议自己写一个纵向滚动的例子练练手</view>
+<view class="title"></view>
+<view class="littletitle"></view>
+<view class="note"></view>

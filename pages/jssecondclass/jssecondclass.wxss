@@ -1,0 +1,109 @@
+/* pages/jssecondclass/jssecondclass.wxss */
+.formcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border:2rpx solid rgb(177, 177, 177);
+  box-sizing: border-box;
+  padding:0 50rpx 50rpx 50rpx;
+  border-radius: 4rpx;
+  color:#4A4E63;
+  font-size:35rpx;
+}
+.formtitle{
+  height:80rpx;
+  width:100%;
+  font-size: 40rpx;
+  line-height:80rpx;
+  text-align: center;
+}
+.placeholderclass{
+  text-align: left;
+  line-height:60rpx;
+}
+.inputclass{
+  height:60rpx;
+  width:100%;
+  border-bottom:4rpx solid rgb(177, 177, 177);
+}
+
+.switchbox{
+  margin-top:30rpx;
+  height:60rpx;
+  width:100%;
+}
+.switchcontent{
+  float: left;
+  line-height: 60rpx;
+  width:80%;
+  height:60rpx;
+}
+.switchclass{
+  float:right;
+  line-height:60rpx;
+  width:20%;
+  zoom:.7;
+}
+.radiobox{
+  margin-top:30rpx;
+  height:60rpx;
+  width:100%;
+}
+.radiocontent{
+  float: left;
+  line-height: 60rpx;
+  width:80%;
+  height:60rpx;
+}
+.radioclass{
+  float:right;
+  line-height:60rpx;
+  width:20%;
+  zoom:1;
+}
+.radiogrouptitle{
+  margin-top:30rpx;
+  height:60rpx;
+  width:100%;
+  line-height:60rpx;
+}
+.radiogroupcontainer{
+  margin-top:20rpx;
+  width:90vw;
+  align-self: left;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.groupradioclass{
+  zoom:0.8;
+  margin-left:20rpx;
+}
+.pickerbox{
+  margin-top:30rpx;
+  height:60rpx;
+  width:100%;
+}
+.pickercontent{
+  height:60rpx;
+  line-height: 60rpx;
+  width:30%;
+  float:left;
+}
+.pickerclass{
+  height:60rpx;
+  line-height:60rpx;
+  width:70%;
+  float: left;
+  text-align: right;
+}
+.submitbtn{
+  margin-top:40rpx;
+  height:80rpx;
+  width:300rpx;
+  border:2rpx solid rgb(187, 187, 187);
+  font-size:40rpx;
+  line-height:80rpx;
+}
