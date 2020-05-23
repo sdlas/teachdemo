@@ -54,6 +54,10 @@ Page({
         url: '../wxmlsecondclass/wxmlsecondclass',
       })
       break;
+      case 10:
+      wx.navigateTo({
+        url: '../wechatapp/wechatapp',
+      })
     }
   },
   onLoad: function () {

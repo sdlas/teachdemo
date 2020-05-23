@@ -1,0 +1,8 @@
+<view class="title">微信小程序上线步骤</view>
+<view class="note">1.注册邮箱，可选择注册网易163邮箱</view>
+<view class="note">2.登录微信公众平台用刚刚注册的邮箱注册一个小程序账号</view>
+<view class="note">3.得到小程序的账号后获取appid，来到小程序的本地开发文件，打开project.config.json文件，将里面"appid"后面的值修改为刚刚获取的appid</view>
+<image src="https://www.laiad231.cn/image/wechatapp1.png" style="height:370rpx;"></image>
+<view class="note">4.在开发者工具中上传代码</view>
+<view class="note">5.在微信公众平台上将刚刚上传的代码提交审核。</view>
+<view class="note">6.审核通过后点击发布就可以在微信上搜索到你自己制作的小程序了。</view>

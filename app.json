@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/wechatapp/wechatapp",
     "pages/jsfirstclass/jsfirstclass",
     "pages/jssecondclass/jssecondclass",
     "pages/jsthirdclass/jsthirdclass",

@@ -48,5 +48,13 @@
     <view class="labeltitle">补充内容</view>
     <view class="labelnote">一些零碎的知识点</view>
   </view>
+  <view class="titlebox" style="margin-top:30rpx">
+    <image class="titleicon"></image>
+    <view class='bigtitle'>小程序上线</view>
+  </view>
+  <view class="label" bindtap="jump" data-id="10">
+    <view class="labeltitle">小程序上线操作流程</view>
+    <view class="labelnote">主要内容：小程序上线操作流程</view>
+  </view>
   <view class="blank"></view>
 </view>
